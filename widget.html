@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="dist/greeter-component.umd.cjs"></script>
+    <link rel="stylesheet" href="dist/greeter-component.css" type="text/css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <div id="my-component"></div>
+    <p id="output">Click the button to see the message here</p>
+</body>
+<script>
+    Greeter.init("#my-component", {
+        message: "Hello from the host app!",
+        buttonText: "Try Me!",
+        outputSelector: "#output"
+    });
+</script>
+
+</html>
