@@ -1,6 +1,6 @@
 import { mount } from "@vue/test-utils";
 import { describe, it, expect, vi } from "vitest";
-import Greeter from "./components/ButtonGreeter.vue";
+import Greeter from "./ButtonGreeter.vue";
 
 describe("Greeter Component", () => {
     it("renders the correct button text", () => {
@@ -13,7 +13,7 @@ describe("Greeter Component", () => {
 
     it("prints message on click", async () => {
         console.log = vi.fn(); // Mock console.log
-        window.alert = vi.fn();
+        window.alert = vi.fn(); // Mock window.alert
 
         const wrapper = mount(Greeter, {
             props: { message: "Hello Test!" }

@@ -42,7 +42,7 @@ export default {
   <style scoped>
 .greeter-container {
   all: initial; /* Prevent CSS conflicts */
-  display: block;
+  display: inline-block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 

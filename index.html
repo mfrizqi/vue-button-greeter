@@ -7,14 +7,35 @@
     <link rel="stylesheet" href="widget_assets/greeter-component.css" type="text/css">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(234, 237, 239);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .web-content {
+            background-color: rgb(177, 205, 224);
+            width: 400px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
         }
     </style>
 </head>
 
 <body>
-    <div id="my-component"></div>
-    <p id="output">Click the button to see the message here</p>
+    <div class="web-content">
+        <p id="output">Click the button to see the message here</p>
+        <div id="my-component"></div>
+    </div>
 </body>
 <script>
     Greeter.init("#my-component", {
